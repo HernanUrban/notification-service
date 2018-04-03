@@ -1,0 +1,42 @@
+server:
+  port: 8785
+
+kafka:
+  bootstrap-servers: localhost:9092
+  consumer:
+    topic: notification
+    group: notification-event-group
+    auto-offset-reset: earliest
+
+spring:
+  mail:
+    host: localhost
+    port: 25 # SMTP server port
+    username: # Login used for authentication
+    password: # Password for the given login
+    protocol: smtp
+    defaultEncoding: UTF-8 # Default message encoding
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
