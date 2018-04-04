@@ -1,6 +1,6 @@
 package com.urban.notificationservice.config;
 
-import com.urban.notificationservice.domain.CreateUserDeserializer;
+import com.urban.notificationservice.domain.NotificationDeserializer;
 import java.util.HashMap;
 import java.util.Map;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
@@ -37,7 +37,7 @@ public class KafkaConfig {
     props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG,
         StringDeserializer.class);
     props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,
-        CreateUserDeserializer.class);
+        NotificationDeserializer.class);
     // allows a pool of processes to divide the work of consuming and processing records
     props.put(ConsumerConfig.GROUP_ID_CONFIG, groupId);
     // automatically reset the offset to the earliest offset
